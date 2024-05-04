@@ -10,6 +10,11 @@ Created a basic homepage according to the provided Figma design. All the compone
 
 Completed
 
+## Version details
+
+Node: 16.17.0
+npm: 8.15.0
+
 ## Available Pages
 
 Home Page - Home.js
@@ -20,12 +25,17 @@ Header
 Banner
 Work
 Footer
+Home
 
 ## Technologies Used
 
 ## CSS
 
 style.scss
+header.module.scss
+banner.module.scss
+work.module.scss
+footer.module.scss
 
 ## Images Used
 

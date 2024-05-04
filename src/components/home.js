@@ -1,6 +1,6 @@
 import "../assets/css/style.scss";
-import Banner from "./banner";
-import Works from "./works";
+import Banner from "./Banner/banner";
+import Works from "./Works/work";
 
 function Home() {
   return (
