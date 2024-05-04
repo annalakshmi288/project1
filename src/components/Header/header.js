@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header
-      className={`header ${isOpen ? "mobile-menu-close active" : "notactive"}`}
+      className={isOpen ? `${Headerstyles.mobile_menu_active}` : `notactive`}
     >
       <div className={Headerstyles.topbar}>
         <img src={Topbar} alt="topbar" />
@@ -38,7 +38,11 @@ const Header = () => {
         </div>
         <div className={Headerstyles.header_aside}>
           <div className={Headerstyles.mobile_menu_close}>
-            <img src={Close} alt="mobile-menu-close" onClick={toggleMenu} />
+            <img
+              src={Close}
+              alt="Mobile menu close image"
+              onClick={toggleMenu}
+            />
           </div>
           <nav>
             <ul>

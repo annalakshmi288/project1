@@ -39,7 +39,6 @@ header {
     display: flex;
     margin: 29px 0;
     li {
-      color: $primary-textcolor;
       font-weight: 500;
       font-size: 14px;
       padding: 0 20px;
@@ -88,14 +87,14 @@ header {
   .header_inner {
     padding: 0 20px !important;
   }
-  .mobile-menu.active {
+  .mobile_menu_active {
     height: 100%;
     overflow-x: hidden;
-    .header-inner {
+    .header_inner {
       .logos {
         display: none;
       }
-      .mobile-menu-close {
+      .mobile_menu_close {
         float: right;
         display: block;
         margin-bottom: 100px;
@@ -104,7 +103,7 @@ header {
           float: right;
         }
       }
-      .header-aside {
+      .header_aside {
         text-align: center;
         float: unset;
         display: block;
@@ -115,7 +114,7 @@ header {
             li {
               margin-bottom: 30px;
             }
-            .login-btn a {
+            .login_btn a {
               border: unset;
               padding: 0;
               span {
