@@ -1,0 +1,151 @@
+// How it Works
+.section_works {
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .underline {
+    margin-top: -27px;
+    img {
+      width: 140px;
+    }
+  }
+  .group_center {
+    display: flex;
+    place-content: center;
+    margin: 30px 0 70px;
+    img {
+      width: 275px;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+    .text {
+      width: 315px;
+      margin: 20px 0 0 30px;
+    }
+  }
+  .move_right {
+    margin-left: 16%;
+    .text {
+      margin: 35px 0 0 80px;
+    }
+    .workart {
+      position: absolute;
+      right: -31%;
+      width: 245px;
+      height: auto;
+      bottom: 30px;
+    }
+    .profile2_work {
+      margin-left: 9%;
+      z-index: 100;
+      position: relative;
+      box-shadow: 17px 18px 8px 0 rgba(0, 0, 0, 0.1),
+        12px 12px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.bottom_btn {
+  margin: 100px 0;
+}
+.numbers {
+  width: auto !important;
+  height: 137px;
+}
+.image_box {
+  position: relative;
+  display: inline;
+}
+.profile1 {
+  .numbers {
+    margin-left: 35px;
+    margin-top: 24px;
+    position: absolute;
+  }
+}
+.profile3 {
+  .numbers {
+    margin-left: 5px;
+    margin-top: 28px;
+    position: absolute;
+  }
+}
+.profile2 {
+  .numbers {
+    margin-left: -21.8px;
+    margin-top: 130px;
+    position: absolute;
+    z-index: 999;
+  }
+}
+@media (max-width: 992px) {
+  .section_works {
+    margin: 0 20px;
+    h2 {
+      font-family: "DM Serif Text";
+    }
+    .group_center {
+      place-content: center;
+      display: grid;
+      .image_box {
+        text-align: center;
+      }
+    }
+    .profile2 {
+      .workart {
+        display: none;
+      }
+      .numbers {
+        margin-left: 15px;
+        margin-top: unset;
+        position: unset;
+        z-index: unset;
+      }
+      .move_right {
+        .profile2_work {
+          margin-left: unset;
+        }
+        .text {
+          margin-left: 0;
+        }
+      }
+    }
+    .group_center img {
+      width: 300px;
+    }
+  }
+  .bottom_btn {
+    margin: 70px 0;
+  }
+}
+@media (max-width: 402px) {
+  .section_works {
+    .move_right {
+      margin: 0;
+      .profile2_work {
+        place-content: center;
+        display: grid;
+        margin: auto;
+      }
+      .text {
+        margin: 20px 20px 0 20px;
+      }
+      .numbers {
+        margin-left: 45px;
+      }
+    }
+    .group_center {
+      .text {
+        margin: 20px 20px 0 20px;
+        width: unset;
+      }
+      img {
+        width: 250px;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+// Home banner
+.banner {
+  background-color: #f5f8ff;
+  position: relative;
+  height: 555px;
+  .left_content {
+    width: 388px;
+    position: absolute;
+    top: 36%;
+    margin-left: 100px;
+    h1 {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 45px;
+    }
+    p {
+      margin-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+  .right_image {
+    float: right;
+    padding-top: 130px;
+    .base_image {
+      z-index: 100;
+      position: relative;
+      height: 425px;
+    }
+    .boxart_overlap {
+      position: absolute;
+      right: 59px;
+      width: 201px;
+      height: 225px;
+      top: 187px;
+    }
+  }
+}
+@media (max-width: 1024px) and (min-width: 991px) {
+  .banner {
+    height: 625px;
+    .left_content {
+      top: 18%;
+    }
+    .right_image {
+      padding-top: 200px;
+      .boxart_overlap {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .banner {
+    position: unset;
+    height: 100%;
+    .left_content {
+      width: auto;
+      margin: 0 20px;
+      padding-top: 20%;
+      position: unset;
+      h1 {
+        font-size: 45px;
+        font-family: "DM Serif Text";
+      }
+    }
+    .right_image {
+      padding-top: 5%;
+      float: unset;
+      .base_image {
+        height: auto;
+        width: 100%;
+      }
+      .boxart_overlap {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 402px) {
+  .banner {
+    .left_content {
+      padding-top: 27%;
+    }
+    .right_image {
+      padding-top: 15%;
+    }
+  }
+}

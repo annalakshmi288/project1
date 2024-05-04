@@ -1,0 +1,142 @@
+$primary-textcolor: #000000;
+$btn_red: #ef8094;
+
+// Header styles
+
+.mobile_menu_close,
+.burgermenu {
+  display: none;
+}
+.logos {
+  display: inline;
+}
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  .header_inner {
+    height: 90px;
+    padding: 0 100px;
+    .header_aside {
+      float: right;
+    }
+    .logo {
+      svg {
+        padding-top: 15px;
+      }
+    }
+  }
+  .topbar {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 29px 0;
+    li {
+      color: $primary-textcolor;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 0 20px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      &:not(:last-child) {
+        line-height: 32px;
+      }
+      a {
+        color: $primary-textcolor;
+      }
+      span {
+        top: -1.2px;
+        position: relative;
+      }
+    }
+    .login_btn {
+      a.btn {
+        text-decoration: none;
+        border: 2px solid #4a4a4a;
+        border-radius: 30px;
+        padding: 5px 25px;
+        color: $primary-textcolor;
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 1091px) {
+  .header_inner {
+    nav li {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header_aside {
+    display: none;
+  }
+  .burgermenu {
+    float: right;
+    display: block;
+    padding-top: 30px;
+  }
+  .header_inner {
+    padding: 0 20px !important;
+  }
+  .mobile-menu.active {
+    height: 100%;
+    overflow-x: hidden;
+    .header-inner {
+      .logos {
+        display: none;
+      }
+      .mobile-menu-close {
+        float: right;
+        display: block;
+        margin-bottom: 100px;
+        width: 100%;
+        img {
+          float: right;
+        }
+      }
+      .header-aside {
+        text-align: center;
+        float: unset;
+        display: block;
+        nav {
+          ul {
+            display: block;
+            padding: 0;
+            li {
+              margin-bottom: 30px;
+            }
+            .login-btn a {
+              border: unset;
+              padding: 0;
+              span {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 402px) {
+  header {
+    .logo {
+      svg {
+        width: 190px;
+      }
+    }
+    .burgermenu {
+      width: 30px;
+    }
+  }
+}
